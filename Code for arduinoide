@@ -1,0 +1,26 @@
+#define SOIL_MOISTURE_PIN 34  // Soil moisture sensor connected to GPIO 34
+#define RELAY_PIN 4           // Relay connected to GPIO 4
+
+int soilMoistureThreshold = 500;
+
+void setup() {
+  pinMode(SOIL_MOISTURE_PIN, INPUT);
+  pinMode(RELAY_PIN, OUTPUT);
+  
+  Serial.begin(9600);
+}
+
+void loop() {
+  int soilMoistureValue = analogRead(SOIL_MOISTURE_PIN);
+
+  Serial.print("Soil Moisture: ");
+  Serial.println(soilMoistureValue);
+
+  if (soilMoistureValue < soilMoistureThreshold) {
+    digitalWrite(RELAY_PIN, HIGH);
+  } else {
+    digitalWrite(RELAY_PIN, LOW);
+  }
+
+  delay(1000);
+}
