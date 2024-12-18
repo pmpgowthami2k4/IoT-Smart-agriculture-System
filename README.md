@@ -6,3 +6,7 @@ The integration with the Blynk IoT platform offers additional benefits, allowing
 This project aligns with the United Nations’ Sustainable Development Goals (SDGs), particularly SDG 6 (Clean Water and Sanitation) and SDG 13 (Climate Action), by advancing responsible water usage and reducing the environmental footprint of irrigation practices. Through the use of readily available components and intuitive IoT technology, this system contributes to sustainable agriculture, helping farmers address water challenges while supporting climate resilience and resource conservation.
 
 
+
+![Image description](ss1.jpeg)
+
+
